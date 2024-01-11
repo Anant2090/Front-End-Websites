@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS file for cleaner code organization -->
+    <script src="https://kit.fontawesome.com/ac2db43a82.js" crossorigin="anonymous"></script>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        nav {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            background-color: #fff;
+            padding: 10px 0;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo_con img {
+          
+            height: 100px;
+            
+        }
+
+        span
+        {
+            margin-left:-850px ;
+            font-size: 40px;
+        }
+
+
+        .tag {
+            background-color: #2a9d8f;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .explore_button {
+            padding: 12px 20px;
+            background-color: #2a9d8f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .explore_button:hover {
+            background-color: #eaf2f1;
+        }
+
+        .product {
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 0;
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            background-color: rgb(209, 243, 231);
+        }
+
+        .product_image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .product_image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product_details {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .product_name {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .product_price {
+            font-size: 24px;
+            color: #2a9d8f;
+        }
+
+        .cta_button {
+            padding: 15px 25px;
+            background-color: #2a9d8f;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .cta_button:hover {
+            background-color: #21867a;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                padding: 60px 20px;
+            }
+
+            .product {
+                flex-direction: column;
+                padding: 30px;
+                
+            }
+        }
+
+        .logo_con
+        {
+
+        }
+        
+
+        
+        
+
+        body{
+            background-color: #21867a;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navigation container">
+            <div class="logo_con">
+                <img src="https://img.freepik.com/free-vector/illustration-share-icon_53876-5622.jpg?w=740&t=st=1704991572~exp=1704992172~hmac=5cdc5c03c712eadd016f4dd6e2e9a07a8bbcd081d0b1dbe95db1d53ed1721394" alt="Logo"> <!-- Replace with your logo URL -->
+            </div>
+            <span>Shop Better</span>
+            <div class="bar_icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <div class="container">
+        <div class="product">
+            <div class="product_image">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmlrZSUyMHNob2V8ZW58MHx8MHx8fDA%3D" alt="Product Image"> <!-- Replace with your product image URL -->
+            </div>
+            <div class="product_details">
+                <div class="product_name">NIKE AIR JORDAN</div>
+                <div class="product_price">$99.99</div>
+                <button type="button" class="cta_button">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
