@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: aqua;
+        }
+
+        .container {
+            max-width: 900px;
+            /*it gives max width to the container which is needed for resposnsive website*/
+            margin: 0 auto;
+
+        }
+
+        .Apply_box {
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+
+            box-shadow: 3px 3px 10px gray;
+            /* X asis, Y asis, Z axis*/
+            border-radius: 10px;
+            margin-top: 50px;
+            background-color: white;
+            text-align: center;
+
+
+        }
+
+        .Form_container {
+            
+            display: grid;
+            margin-top: 20px;
+            
+            grid-template-columns:1fr 1fr;
+            gap: 20px;
+            
+        }
+        .from_control
+        {
+
+            display: flex;
+            flex-direction: column;
+        }
+        label
+        {
+            font-size: 18px;
+        }
+        input ,textarea
+        {
+            padding: 6px 10px;
+            border-radius: 5px;
+        }
+        .buttonn
+        {
+            margin-top: 10px;
+            display: flex;
+            justify-content: end;
+            
+
+        }
+
+        button
+        {
+            background-color: aqua;
+            border-radius: 5px;
+            padding: 5px 5px;
+            
+        }
+        button:hover
+        {
+            color: red;
+            background-color: azure;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <form>
+    <div class="container">
+        <div class="Apply_box">
+            <h1>
+                Registration Form
+            </h1>
+            <form action="">
+                <div class="Form_container">
+                    <div class="from_control">
+                        <label for="first_name">First Name :</label>
+                        <input type="text" id="first_name" name="first_name" placeholder="Enter your first name..">
+
+                    </div>
+
+                    <div class="from_control">
+                        <label for="last_name">Last Name :</label>
+                        <input id="last_name" name="last_name" placeholder="Enter your last name">
+
+                    </div>
+                    <div class="from_control">
+
+                        <label for="my_mail">Enter Email :</label>
+                        <input type="email" id="my_mail" name="my_mail" placeholder="Enter yout Email Here">
+
+                    </div>
+
+                    <div class="from_control">
+                        <label for="Job-role">Job Role :</label>
+                        <input type="text" id="Job-role" name="Job-role" placeholder="Enter your job role">
+                    </div>
+
+                    <div class="from_control">
+                        <label for="Address">Enter Address :</label>
+                        <textarea name="Address" id="Address" rows="5" cols="30"></textarea>
+                    </div>
+
+                    <div class="from_control">
+                        <label for="city">Enter your City :</label>
+                        <input type="text" id="city" name="city" placeholder="Enter your city..">
+
+                    </div>
+
+                    <div class="from_control">
+                        <label for="pincode">Enter your pincode:</label>
+                        <input type="number" id="pincode" name="pincode" placeholder="Enter your area pincode..">
+
+                    </div>
+                </div>
+                <div class="buttonn">
+                    <button type="submit">Apply Now</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</form>
+
+</body>
+
+</html>
